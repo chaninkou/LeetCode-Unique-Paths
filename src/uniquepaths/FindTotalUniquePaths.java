@@ -3,7 +3,7 @@ package uniquepaths;
 public class FindTotalUniquePaths {
 	// Dp way, but 2D array this time
 	// Basically check the maximum path per block to the end
-	public int uniquePath(int m, int n){
+	public int uniquePaths(int m, int n){
 		int[][] dp = new int[m][n];
 		
 		// Fill the top part with all 1's
@@ -19,10 +19,14 @@ public class FindTotalUniquePaths {
 		// No point of starting from 0, already fill those with 1
 		for(int i = 1; i < m; i++){
 			for(int j = 1; j < n; j++){
-				dp[i][j] = dp[i][] + dp[][];
+				// {1,1}
+				// {1,0}
+				dp[i][j] = dp[i][j - 1] + dp[i - 1][j];
 			}
 		}
 		
+		// Get the end element
+		return dp[m - 1][n - 1];
 	}
 	
     public int uniquePaths2(int m, int n) {
