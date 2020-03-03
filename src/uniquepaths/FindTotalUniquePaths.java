@@ -19,8 +19,8 @@ public class FindTotalUniquePaths {
 		// No point of starting from 0, already fill those with 1
 		for(int i = 1; i < m; i++){
 			for(int j = 1; j < n; j++){
-				// {1,1}
-				// {1,0}
+				// {1,1,1}
+				// {1,2,3}
 				dp[i][j] = dp[i][j - 1] + dp[i - 1][j];
 			}
 		}
