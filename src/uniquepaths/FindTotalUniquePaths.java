@@ -29,6 +29,7 @@ public class FindTotalUniquePaths {
 		return dp[m - 1][n - 1];
 	}
 	
+	// A formula method that is pretty hard to have during interview
     public int uniquePaths2(int m, int n) {
         // Total number of steps to goal
         int N = n + m - 2;
