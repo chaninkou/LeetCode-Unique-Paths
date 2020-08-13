@@ -1,4 +1,4 @@
-package uniquepaths;
+package leetcode62;
 
 public class FindTotalUniquePaths {
 	// Dp way, but 2D array this time
