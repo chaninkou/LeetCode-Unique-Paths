@@ -25,7 +25,7 @@ public class FindTotalUniquePaths {
 			}
 		}
 		
-		// Get the end element
+		// Get the finished path element
 		return dp[m - 1][n - 1];
 	}
 	
